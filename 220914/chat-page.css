@@ -1,0 +1,424 @@
+* {
+    /* width: 0;
+    padding: 0;
+    margin: 0; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: rgb(151, 241, 241); */
+}
+
+.chat-box {
+    position: relative;
+    top: 5px;
+    left: 15%;
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    box-shadow: 0px 0px 20px 2px;
+}
+
+/* ................. aside.........................  */
+.aside {
+    position: absolute;
+    border: 1px solid grey;
+    width: 200px;
+    max-width: 800px;
+    height: 600px;
+    color: white;
+    background-color: rgb(75, 69, 69);
+
+}
+
+.settings {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 25px;
+    color: rgb(155, 145, 145);
+    /* background-color: blue; */
+    cursor: pointer;
+
+}
+
+.portfolio {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.portfolio img {
+    width: 80px;
+    height: 80px;
+    border-style: initial;
+    border: 3px solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.portfolio h3 {
+    color: white;
+    height: 0px;
+    cursor: pointer;
+}
+
+.portfolio p {
+    color: rgb(168, 158, 158);
+    height: 0px;
+    cursor: pointer;
+    font-size: 12px;
+
+}
+
+.aside-menu {
+    width: 100%;
+    font-size: 12px;
+    margin-top: 50px;
+    background-color: rgb(87, 79, 79);
+
+}
+
+
+.aside-menu>span {
+    width: 180px;
+    padding: 0px 10px;
+    height: 40px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.aside-menu span:hover {
+    background-color: rgb(110, 102, 102);
+}
+
+
+
+
+
+
+
+.aside-menu span>i {
+
+    margin-right: 10px;
+
+}
+
+
+
+.aside-menu span button {
+
+    position: absolute;
+    left: 130px;
+    width: 30px;
+    height: 15px;
+    border-radius: 7.5px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ................. aside ends.........................  */
+
+
+/* <!-- ..................... f list...................  --> */
+.f-list {
+    position: absolute;
+    left: 200px;
+    border: 1px solid grey;
+    width: 330px;
+    max-width: 800px;
+    height: 600px;
+    overflow: hidden;
+    /*  */
+}
+
+.f-list .head {
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    border-bottom: 1px solid grey;
+
+}
+
+.f-list h3 {
+    margin-top: 33px;
+    height: 0px;
+
+}
+
+.f-list p {
+    color: grey;
+    margin-top: 10px;
+    height: 5px;
+
+
+}
+
+
+
+.f-list h3 i {
+    color: grey;
+    margin-right: 10px;
+
+}
+
+.head {
+    /* background-color: coral; */
+    line-height: .1;
+
+}
+
+/* ............................................  */
+
+
+
+
+
+.search-bar input {
+    position: relataive;
+    padding: 0px 30px;
+    height: 30px;
+    left: 15px;
+    width: 235px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: .5px solid rgb(221, 212, 212);
+    padding: 0px 35px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.search-bar>i {
+    position: absolute;
+    left: 20px;
+    top: 130px;
+    color: grey;
+
+}
+
+.comment-container {
+    margin-top: 20px;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+.comnt-box {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    border-color: rgb(153, 143, 143);
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+
+
+}
+
+.msg-count button {
+    background-color: rgb(255, 0, 0);
+    height: 18px;
+    width: 30px;
+    color: white;
+    border-radius: 8px;
+    border: none;
+
+}
+
+.txt {
+    margin-left: 10px;
+    line-height: .1;
+    color: gray;
+    width: 100%;
+
+}
+
+.pro-im-1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 22px;
+}
+
+.time {
+    position: relative;
+    right: 10px;
+    font-size: 10px;
+    margin-bottom: 12px;
+}
+
+
+/* <!-- ..................... f Chat ...................  --> */
+
+.f-chat {
+    position: absolute;
+    left: 530px;
+    /* border: 1px solid grey; */
+    width: 470px;
+    max-width: 1000px;
+    height: 600px;
+    /* background-color: rgba(255, 179, 80, 0.644); */
+
+}
+
+.f-chat-header {
+    position: relative;
+    border: 1px solid;
+    height: 102px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-color: rgb(153, 143, 143);
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    padding-left: 10px;
+
+
+
+}
+
+.r-icon {
+    width: 150px;
+    color: hwb(177deg 27% 21%);
+    font-size: 30px;
+
+}
+
+.con-box {
+    padding: 10px;
+
+
+}
+
+.chat-1 {
+    display: flex;
+    position: relative;
+    padding-left: 10px;
+}
+
+.chat-1>img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+
+}
+
+.dialog {
+    display: flex;
+
+}
+
+.chat-dialog {
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: #bee5c4;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 4px 10px;
+    margin-bottom: 0px;
+    margin-top: 12px;
+}
+
+.chat-1>i {
+    position: absolute;
+    top: 10px;
+    left: 64px;
+    color: #bee5c4;
+
+}
+
+.dialog>time {
+    position: absolute;
+    margin-right: 25px;
+    font-size: 10px;
+}
+
+.chat-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    padding-right: 10px;
+}
+
+
+.chat-2 i {
+    position: absolute;
+    right: 64px;
+    top: 0px;
+    color: #bee5c4;
+}
+
+.chat-2 .chat-dialog {
+    margin-right: 40px;
+}
+
+.type-text {
+    position: absolute;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    border-top: 0.5px solid grey;
+    margin-bottom: 0px;
+
+}
+
+.type-text>i {
+    position: absolute;
+    font-size: 21px;
+    left: 5px;
+    top: 10px;
+    display: flex;
+    height: 20px;
+    width: 20px;
+    color: rgba(128, 128, 128, 0.555);
+    border: .5px solid rgba(128, 128, 128, 0.555);
+    border-radius: 12px;
+}
+
+.type-text input {
+    position: absolute;
+    top: 11px;
+    left: 32px;
+    width: 300px;
+    border: .5px solid rgba(128, 128, 128, 0.555);
+    border-radius: 10px 0px 0px 10px;
+    padding-left: 25px;
+    align-content: center;
+}
+
+.type-text button {
+    position: absolute;
+    top: 10px;
+    left: 360px;
+    width: 60px;
+    height: 22px;
+    border: 1px solid;
+    color: white;
+    background-color: #42cac0;
+    border: .5px solid #42cac0;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+
+
+/* <!-- ..................... f Chat Ends...................  --> */
